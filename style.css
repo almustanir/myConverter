@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Shrikhand&display=swap');
+* {
+    font-family: 'Righteous';
+    box-sizing: border-box;
+  
+
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: 20;
+    
+}
+
+.converter {
+    padding: 10px 20px ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+.converter > .tittle {
+    display: flex;
+    align-items: center;
+}
+
+.converter > .tittle > svg {
+    width: 30px;
+    margin-right: 5px;
+    color: #888843;
+    animation-name: svg;
+    animation-duration: 10s;
+}
+
+@keyframes svg{
+    from{color:gray;}
+    to{color: #888843;}
+}
+
+.converter > .tittle > h1 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.converter > .tittle > h1 > span {
+    color: #888843;
+    animation-name: svg;
+    animation-duration: 10s;
+
+}
+#converterForm > div {
+    display: flex;
+    flex-direction: column;
+    margin:10px 0;
+}
+
+#converterForm > div > input,
+#converterForm > div > select {
+    border:1px solid rgb(210, 207, 207);
+    border-radius: 6px;
+    padding: 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 8px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+#converterForm > button {
+    width: 100%;
+    background-color: #888843;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+#convertResult {
+    width: 100%;
+    margin: 20px 0;
+    font-weight: 900;
+    color: gray;
+
+}
+
+#convertResult.error {
+    color: red;
+    padding: 20px;
+    
+}
